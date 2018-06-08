@@ -1,6 +1,4 @@
--- This file was automatically generated for the LuaDist project.
-
-package = "coxpcall"
+package = "Coxpcall"
 
 version = "1.11.0-1"
 
@@ -17,15 +15,9 @@ description = {
 
 dependencies = { }
 
--- LuaDist source
 source = {
-  tag = "1.11.0-1",
-  url = "git://github.com/LuaDist-testing/coxpcall.git"
+  url = "http://luaforge.net/frs/download.php/3047/coxpcall-1.11.0.tar.gz",
 }
--- Original source
--- source = {
---   url = "http://luaforge.net/frs/download.php/3047/coxpcall-1.11.0.tar.gz",
--- }
 
 build = {
    type = "make",
