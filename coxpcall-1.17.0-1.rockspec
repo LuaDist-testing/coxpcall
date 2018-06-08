@@ -1,6 +1,19 @@
-package = "Coxpcall"
+-- This file was automatically generated for the LuaDist project.
 
-version = "scm-1"
+package = "coxpcall"
+
+version = "1.17.0-1"
+
+-- LuaDist source
+source = {
+  tag = "1.17.0-1",
+  url = "git://github.com/LuaDist-testing/coxpcall.git"
+}
+-- Original source
+-- source = {
+--   url = "git://github.com/keplerproject/coxpcall",
+--   tag = "v1_17_0",
+-- }
 
 description = {
   summary = "Coroutine safe xpcall and pcall",
@@ -14,10 +27,6 @@ description = {
 }
 
 dependencies = { }
-
-source = {
-  url = "git://github.com/keplerproject/coxpcall.git"
-}
 
 build = {
    type = "builtin",
