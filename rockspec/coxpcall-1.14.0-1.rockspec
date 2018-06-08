@@ -1,9 +1,9 @@
 package = "Coxpcall"
 
-version = "1.13.0-1"
+version = "1.14.0-1"
 
 source = {
-  url = "http://luaforge.net/frs/download.php/3406/coxpcall-1.13.0.tar.gz",
+  url = "http://www.keplerproject.org/files/coxpcall-1.14.0.tar.gz",
 }
 
 description = {
@@ -20,12 +20,6 @@ description = {
 dependencies = { }
 
 build = {
-   type = "make",
-   build_pass = false,
-   install_target = "install-rocks",
-   install_variables = {
-     PREFIX  = "$(PREFIX)",
-     LUA_DIR = "$(LUADIR)",
-     BIN_DIR = "$(BINDIR)"
-   }
+   type = "builtin",
+   modules = { coxpcall = "src/coxpcall.lua" }
 }

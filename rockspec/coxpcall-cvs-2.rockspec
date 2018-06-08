@@ -1,10 +1,6 @@
 package = "Coxpcall"
 
-version = "1.13.0-1"
-
-source = {
-  url = "http://luaforge.net/frs/download.php/3406/coxpcall-1.13.0.tar.gz",
-}
+version = "cvs-2"
 
 description = {
   summary = "Coroutine safe xpcall and pcall",
@@ -19,13 +15,11 @@ description = {
 
 dependencies = { }
 
+source = {
+  url = "git://github.com/keplerproject/coxpcall.git"
+}
+
 build = {
-   type = "make",
-   build_pass = false,
-   install_target = "install-rocks",
-   install_variables = {
-     PREFIX  = "$(PREFIX)",
-     LUA_DIR = "$(LUADIR)",
-     BIN_DIR = "$(BINDIR)"
-   }
+   type = "module",
+   modules = { coxpcall = "src/coxpcall.lua" }
 }
