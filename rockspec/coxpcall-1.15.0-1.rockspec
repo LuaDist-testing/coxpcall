@@ -1,19 +1,11 @@
--- This file was automatically generated for the LuaDist project.
+package = "Coxpcall"
 
-package = "coxpcall"
+version = "1.15.0-1"
 
-version = "1.14.0-2"
-
--- LuaDist source
 source = {
-  tag = "1.14.0-2",
-  url = "git://github.com/LuaDist-testing/coxpcall.git"
+  url = "git://github.com/keplerproject/coxpcall",
+  tag = "v1_15_0",
 }
--- Original source
--- source = {
---   url = "https://github.com/keplerproject/coxpcall/archive/v1_14_0.tar.gz",
---   dir = "coxpcall-1_14_0",
--- }
 
 description = {
   summary = "Coroutine safe xpcall and pcall",
